@@ -1,6 +1,6 @@
 # Rest-api-spring-boot
-It is  a REST API project that will take a question via a URL Encoded GET parameter in the mentioned url endpoint and will respond to the answer in JSON format. Base url of your api should be the heroku app url you’ve provided during registration.
-The bot should be able to answer following questions:
+It is  a REST API project that will take a question via a URL Encoded GET parameter in the mentioned url endpoint and will respond to the answer in JSON format.
+The bot is able to answer following questions:
 
 
 1.Greetings
