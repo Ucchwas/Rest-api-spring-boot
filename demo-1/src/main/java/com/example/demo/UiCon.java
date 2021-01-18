@@ -46,7 +46,7 @@ public class UiCon {
 		String ask = words[2];
 		RestTemplate restTemplate = new RestTemplate();
 		HttpHeaders headers = new HttpHeaders();
-		String api = "67fb98b514a7781a2cd33a9b86597c27"; //Your Api
+		String api = "67fb98b514a7781a2cd33a9b86597c27"; //User Api Key
 		String url = "http://api.openweathermap.org/data/2.5/weather?q="+city+"&appid="+api;
 		ResponseEntity<OpenWeatherResponse> response = restTemplate.getForEntity(url, OpenWeatherResponse.class);
 		if(what.equals("temperature")) {
