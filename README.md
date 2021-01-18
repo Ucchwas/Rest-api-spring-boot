@@ -2,7 +2,9 @@
 It is  a REST API project that will take a question via a URL Encoded GET parameter in the mentioned url endpoint and will respond to the answer in JSON format. Base url of your api should be the heroku app url you’ve provided during registration.
 The bot should be able to answer following questions:
 
+
 1.Greetings
+
 Corona is a polite alien. She can exchange some greetings. Don’t be rude to her.
 Sample:
 “Hello! How are you?”
@@ -19,6 +21,7 @@ Response: JSON
 }
 
 2.Weather Info
+
 Corona is curious about our planet’s weather. She may ask for general weather related
 information for a city like - Current temperature, humidity, Weather Forecast of today.
 Sample question:
@@ -37,6 +40,7 @@ Response: JSON
 }
 
 3.Basic World Affairs
+
 Queries on famous people, country, movies, books, music etc. You can get help from Wikipedia
 or google to answer these questions.
 Sample question:
