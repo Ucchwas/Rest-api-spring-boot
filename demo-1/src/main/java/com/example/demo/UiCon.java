@@ -46,7 +46,7 @@ public class UiCon {
 		String ask = words[2];
 		RestTemplate restTemplate = new RestTemplate();
 		HttpHeaders headers = new HttpHeaders();
-		String api = "67fb98b514a7781a2cd33a9b86597c27";
+		String api = "67fb98b514a7781a2cd33a9b86597c27"; //Your Api
 		String url = "http://api.openweathermap.org/data/2.5/weather?q="+city+"&appid="+api;
 		ResponseEntity<OpenWeatherResponse> response = restTemplate.getForEntity(url, OpenWeatherResponse.class);
 		if(what.equals("temperature")) {
@@ -64,19 +64,6 @@ public class UiCon {
 		}
 		return "Don't know";
 	}
-	
-//	
-//	@RequestMapping(method = RequestMethod.GET , value = "/byCity/{city}")
-//	public @ResponseBody Object getWeatherByCity(@PathVariable String city) {
-//		RestTemplate restTemplate = new RestTemplate();
-//		HttpHeaders headers = new HttpHeaders();
-//		String api = "67fb98b514a7781a2cd33a9b86597c27";
-//		String url = "http://api.openweathermap.org/data/2.5/weather?q="+city+"&appid="+api;
-//		ResponseEntity<Object> response = restTemplate.getForEntity(url, Object.class);
-//		//String body = response.getBody();
-//		//String temp = response.getBody().getMain().getTemp(); 
-//		return response;
-//	}
 	
 	@RequestMapping("/qa")
 	
